@@ -1,0 +1,97 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="ReViseApp.MainWindow"
+        Title="ReViseApp - Dashboard"
+        Width="1024" Height="576"
+        Background="#F5F5F5">
+
+    <!-- Root Layout: Sidebar + Content -->
+    <Grid ColumnDefinitions="220,*">
+
+        <!-- Sidebar -->
+        <Border Background="#2C3E50" Width="220">
+            <Grid RowDefinitions="Auto,*" Margin="0,20,0,20">
+                <!-- App Title -->
+                <TextBlock Text="ReViseApp"
+                        FontSize="22"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Margin="20,0,0,20"
+                        Grid.Row="0"/>
+
+                <!-- Button housing stretches to bottom -->
+                <Border Grid.Row="1"
+                        Background="#34495E"
+                        CornerRadius="0,0,0,0"
+                        Padding="10,10,0,10"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch">
+                    <StackPanel Spacing="8">
+                        <Button Content="Dashboard" Height="40"
+                                HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                        <Button Content="Add Log" Height="40"
+                                HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                        <Button Content="View History" Height="40"
+                                HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                        <Button Content="Settings" Height="40"
+                                HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Column="1" RowDefinitions="Auto,Auto,*" Margin="20">
+
+            <!-- Header -->
+            <TextBlock Text="Motorcycle Maintenance Dashboard"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#2C3E50"
+                       HorizontalAlignment="Left"
+                       Margin="0,0,0,20"/>
+
+            <!-- Summary Cards -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Spacing="20" Margin="0,0,0,20">
+                
+                <Border Background="#27AE60" Padding="20" CornerRadius="12" Width="180">
+                    <StackPanel>
+                        <TextBlock Text="Up-to-Date" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="0" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#F39C12" Padding="20" CornerRadius="12" Width="180">
+                    <StackPanel>
+                        <TextBlock Text="Due Soon" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="0" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="#E74C3C" Padding="20" CornerRadius="12" Width="180">
+                    <StackPanel>
+                        <TextBlock Text="Overdue" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="0" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+
+            <!-- Main Content Area -->
+            <Border Grid.Row="2" Background="White" CornerRadius="8" Padding="20">
+                <TextBlock Text="Upcoming Maintenance &amp; History will be displayed here..."
+                           Foreground="Gray"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+            </Border>
+
+        </Grid>
+    </Grid>
+</Window>
