@@ -1,12 +1,65 @@
 <UserControl xmlns="https://github.com/avaloniaui"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            x:Class="ReViseApp.Views.DashboardView">
-    
-    <Grid>
-        <TextBlock Text="Dashboard Content Goes Here"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="24"
-                   Foreground="#2C3E50"/>
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ReViseApp.Views.DashboardView"
+             Background="#F5F5F5">
+
+    <Grid RowDefinitions="Auto,Auto,*" Margin="10">
+
+        <!-- Dashboard Header -->
+        <TextBlock Text="Motorcycle Maintenance Dashboard"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   Foreground="#303c54"
+                   Grid.Row="0"
+                   Margin="0,0,0,20"/>
+
+        <!-- Summary Cards -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="20" Margin="0,0,0,20">
+            <Border Background="#3D9A6B" Padding="20" CornerRadius="12" Width="180">
+                <StackPanel>
+                    <TextBlock Text="Up-to-Date" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="5" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#D4A258" Padding="20" CornerRadius="12" Width="180">
+                <StackPanel>
+                    <TextBlock Text="Due Soon" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="2" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#B25A56" Padding="20" CornerRadius="12" Width="180">
+                <StackPanel>
+                    <TextBlock Text="Overdue" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="1" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <!-- Maintenance List -->
+        <ListBox Grid.Row="2" BorderThickness="0"
+                              Background="#F5F5F5"
+                              SelectionMode="Single"
+                              Foreground="#303c54">
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal" Spacing="20">
+                    <TextBlock Text="Honda CBR" Width="120" Foreground="#303c54"/>
+                    <TextBlock Text="Oil Change" Width="150" Foreground="#303c54"/>
+                    <TextBlock Text="2025-09-15" Width="120" Foreground="#303c54"/>
+                    <TextBlock Text="Due Soon" Width="100" Foreground="#D4A258"/>
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem>
+                <StackPanel Orientation="Horizontal" Spacing="20">
+                    <TextBlock Text="Yamaha R15" Width="120" Foreground="#303c54"/>
+                    <TextBlock Text="Tire Replacement" Width="150" Foreground="#303c54"/>
+                    <TextBlock Text="2025-09-10" Width="120" Foreground="#303c54"/>
+                    <TextBlock Text="Overdue" Width="100" Foreground="#B25A56"/>
+                </StackPanel>
+            </ListBoxItem>
+        </ListBox>
+
     </Grid>
 </UserControl>

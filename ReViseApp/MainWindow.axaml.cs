@@ -1,5 +1,6 @@
 using Avalonia.Controls;
 using ReViseApp.Views;
+using ReViseApp.Models;
 
 namespace ReViseApp;
 
@@ -16,9 +17,9 @@ public partial class MainWindow : Window
     {
         ContentArea.Content = new Views.DashboardView();
     }
-    private void Vehicles_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private void Bikes_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        ContentArea.Content = new Views.VehiclesView();
+        ContentArea.Content = new Views.BikesView();
     }
     private void Logs_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {

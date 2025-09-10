@@ -1,0 +1,64 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ReViseApp.Views.BikesView"
+             xmlns:models="clr-namespace:ReViseApp.Models"
+             xmlns:views="clr-namespace:ReViseApp.Views"
+            Background="#F0F2F5"
+             x:DataType="views:BikesView">
+
+    <Grid RowDefinitions="Auto,Auto,*" Margin="10">
+
+        <!-- Header -->
+        <TextBlock Text="Motorcycles"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="#303c54"
+                   Margin="0,0,0,20"
+                   Grid.Row="0"/>
+
+        <!-- Top Bar (Add + Search) -->
+        <StackPanel Orientation="Horizontal" Spacing="10" Grid.Row="1" Margin="0,0,0,10">
+            <Button Content="Add Motorcycle"
+                    Height="32"
+                    VerticalContentAlignment="Center"
+                    Background="White"
+                    Foreground="#303c54"
+                    BorderBrush="#CCCCCC"
+                    BorderThickness="1"
+                    Padding="12,0"/>
+            <TextBox Watermark="Search..."
+                     Width="200"
+                     Height="32"
+                     VerticalContentAlignment="Center"
+                     Background="White"
+                     Foreground="#303c54"
+                     BorderBrush="#CCCCCC"/>
+        </StackPanel>
+
+        <!-- Motorcycle List -->
+        <ListBox Grid.Row="2"
+                 ItemsSource="{Binding Motorcycles}"
+                 BorderBrush="#E0E0E0"
+                 BorderThickness="1"
+                 Background="#F0F2F5">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="models:BikeModels">
+                    <Border Background="White"
+                            CornerRadius="8"
+                            Padding="10"
+                            Margin="0,0,0,10"
+                            BorderBrush="#D6D9E0"
+                            BorderThickness="1">
+                        <StackPanel Orientation="Horizontal" Spacing="20">
+                            <TextBlock Text="{Binding Type}" Width="100" Foreground="#303c54"/>
+                            <TextBlock Text="{Binding Brand}" Width="120" Foreground="#303c54"/>
+                            <TextBlock Text="{Binding Model}" Width="150" Foreground="#303c54"/>
+                            <TextBlock Text="{Binding Displacement}" Width="100" Foreground="#303c54"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</UserControl>

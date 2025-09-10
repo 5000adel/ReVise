@@ -5,15 +5,15 @@
         mc:Ignorable="d"
         x:Class="ReViseApp.MainWindow"
         Title="ReViseApp - Dashboard"
-        Width="1024" Height="576"
+        Width="1360" Height="768"
         Background="#F5F5F5">
 
     <!-- Root Layout: Sidebar + Content -->
-    <Grid ColumnDefinitions="220,*">
+    <Grid ColumnDefinitions="286,*">
 
         <!-- Sidebar -->
-        <Border Background="#2C3E50" Width="220">
-            <Grid RowDefinitions="Auto,*" Margin="0,20,0,20">
+        <Border Background="#2C3E50" Width="286">
+            <Grid RowDefinitions="Auto,*" Margin="0,20,0,0">
                 <!-- App Title -->
                 <TextBlock Text="ReViseApp"
                         FontSize="22"
@@ -26,30 +26,35 @@
                 <Border Grid.Row="1"
                         Background="#34495E"
                         CornerRadius="0,0,0,0"
-                        Padding="10,10,0,10"
+                        Padding="10,16,0,10"
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch">
-                    <StackPanel Spacing="8">
+                    <StackPanel Spacing="16">
                         <Button Content="Dashboard" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
                                 CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
-                                Click="Dashboard_Click"/>
-                        <Button Content="Vehicles" Height="40"
+                                Click="Dashboard_Click"
+                                Padding="40,0,0,0"/>
+                        <Button Content="Motorcycles" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
                                 CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
-                                Click="Vehicles_Click"/>
+                                Click="Bikes_Click"
+                                Padding="40,0,0,0"/>
                         <Button Content="Add Log" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
                                 CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
-                                Click="Logs_Click"/>
+                                Click="Logs_Click"
+                                Padding="40,0,0,0"/>
                         <Button Content="View History" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
                                 CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
-                                Click="History_Click"/>
+                                Click="History_Click"
+                                Padding="40,0,0,0"/>
                         <Button Content="Settings" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
                                 CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
-                                Click="Settings_Click"/>
+                                Click="Settings_Click"
+                                Padding="40,0,0,0"/>
                     </StackPanel>
                 </Border>
             </Grid>
