@@ -26,3 +26,18 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/ael/Documents/Code/ReVise/ReViseApp/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ael/Documents/Code/ReVise/ReViseApp/Views/DashboardView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ael/Documents/Code/ReVise/ReViseApp/Views/HistoryView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ael/Documents/Code/ReVise/ReViseApp/Views/LogsView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ael/Documents/Code/ReVise/ReViseApp/Views/SettingsView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/ael/Documents/Code/ReVise/ReViseApp/Views/VehiclesView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

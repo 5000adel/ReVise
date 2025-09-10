@@ -1,3 +1,11 @@
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.csproj.AssemblyReference.cache
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/Avalonia/resources
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.AssemblyInfoInputs.cache
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.AssemblyInfo.cs
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.csproj.CoreCompileInputs.cache
+/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.sourcelink.json
 /home/ael/Documents/Code/ReVise/ReViseApp/bin/Debug/net9.0/ReViseApp
 /home/ael/Documents/Code/ReVise/ReViseApp/bin/Debug/net9.0/ReViseApp.deps.json
 /home/ael/Documents/Code/ReVise/ReViseApp/bin/Debug/net9.0/ReViseApp.runtimeconfig.json
@@ -58,14 +66,6 @@
 /home/ael/Documents/Code/ReVise/ReViseApp/bin/Debug/net9.0/runtimes/win-arm64/native/libSkiaSharp.dll
 /home/ael/Documents/Code/ReVise/ReViseApp/bin/Debug/net9.0/runtimes/win-x64/native/libSkiaSharp.dll
 /home/ael/Documents/Code/ReVise/ReViseApp/bin/Debug/net9.0/runtimes/win-x86/native/libSkiaSharp.dll
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.csproj.AssemblyReference.cache
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/Avalonia/resources
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.GeneratedMSBuildEditorConfig.editorconfig
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.AssemblyInfoInputs.cache
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.AssemblyInfo.cs
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.csproj.CoreCompileInputs.cache
-/home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.sourcelink.json
 /home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.csproj.Up2Date
 /home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/ReViseApp.dll
 /home/ael/Documents/Code/ReVise/ReViseApp/obj/Debug/net9.0/refint/ReViseApp.dll

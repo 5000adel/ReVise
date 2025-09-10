@@ -32,66 +32,32 @@
                     <StackPanel Spacing="8">
                         <Button Content="Dashboard" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
-                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
+                                Click="Dashboard_Click"/>
+                        <Button Content="Vehicles" Height="40"
+                                HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
+                                Click="Vehicles_Click"/>
                         <Button Content="Add Log" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
-                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
+                                Click="Logs_Click"/>
                         <Button Content="View History" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
-                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
+                                Click="History_Click"/>
                         <Button Content="Settings" Height="40"
                                 HorizontalAlignment="Stretch" VerticalContentAlignment="Center"
-                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"/>
+                                CornerRadius="20,0,0,20" Background="#3D566E" Foreground="White"
+                                Click="Settings_Click"/>
                     </StackPanel>
                 </Border>
             </Grid>
         </Border>
 
-        <!-- Main Content -->
-        <Grid Grid.Column="1" RowDefinitions="Auto,Auto,*" Margin="20">
-
-            <!-- Header -->
-            <TextBlock Text="Motorcycle Maintenance Dashboard"
-                       FontSize="28"
-                       FontWeight="Bold"
-                       Foreground="#2C3E50"
-                       HorizontalAlignment="Left"
-                       Margin="0,0,0,20"/>
-
-            <!-- Summary Cards -->
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Spacing="20" Margin="0,0,0,20">
-                
-                <Border Background="#27AE60" Padding="20" CornerRadius="12" Width="180">
-                    <StackPanel>
-                        <TextBlock Text="Up-to-Date" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <TextBlock Text="0" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Border>
-
-                <Border Background="#F39C12" Padding="20" CornerRadius="12" Width="180">
-                    <StackPanel>
-                        <TextBlock Text="Due Soon" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <TextBlock Text="0" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Border>
-
-                <Border Background="#E74C3C" Padding="20" CornerRadius="12" Width="180">
-                    <StackPanel>
-                        <TextBlock Text="Overdue" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <TextBlock Text="0" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
-                    </StackPanel>
-                </Border>
-
-            </StackPanel>
-
-            <!-- Main Content Area -->
-            <Border Grid.Row="2" Background="White" CornerRadius="8" Padding="20">
-                <TextBlock Text="Upcoming Maintenance &amp; History will be displayed here..."
-                           Foreground="Gray"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"/>
-            </Border>
-
-        </Grid>
+        <!-- Content -->
+        <Border Grid.Column="1" Background="White" CornerRadius="8" Padding="20">
+            <ContentControl x:Name="ContentArea"/>
+        </Border>
     </Grid>
 </Window>

@@ -1,0 +1,12 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            x:Class="ReViseApp.Views.HistoryView">
+    
+    <Grid>
+        <TextBlock Text="History Content Goes Here"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="24"
+                   Foreground="#2C3E50"/>
+    </Grid>
+</UserControl>

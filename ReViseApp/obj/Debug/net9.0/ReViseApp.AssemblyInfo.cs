@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReViseApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+351131f54bf18dac34c85e0b990171de2c0e9b8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f8e4ecaee6e877e9191a3ecc293391b7a351878")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReViseApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReViseApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
